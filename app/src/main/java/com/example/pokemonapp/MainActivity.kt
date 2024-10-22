@@ -55,10 +55,11 @@ class MainActivity : AppCompatActivity() {
 
         val pokemonImageView = findViewById<ImageView>(R.id.pokemonImageView)
         val pokemonNameTextView = findViewById<TextView>(R.id.tlPokemonNombre)
-
+        val pokemonHeightTextView = findViewById<TextView>(R.id.pokemonHeightTextView)
+        val pokemonWeightTextView = findViewById<TextView>(R.id.pokemonWeightTextView)
         pokemonNameTextView.text = pokemon.name
-        //pokemonHeightTextView.text = "Height: ${pokemon.height}"
-        //pokemonWeightTextView.text = "Weight: ${pokemon.weight}"*/
+        pokemonHeightTextView.text = "Altura: ${pokemon.height}"
+        pokemonWeightTextView.text = "Peso: ${pokemon.weight}"
 
         // Cargar la imagen del sprite usando Glide
         Glide.with(this)
